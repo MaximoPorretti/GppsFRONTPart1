@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPPS - Universidad Nacional de Río Negro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-So2CHeud6JF1xVNp1LlSIuwt3sgVUg.png" alt="Logo UNRN" class="logo">
+            </div>
+            <div class="user-info">
+                <div class="user-dropdown">
+                    <span class="user-name">Maximo Porretti (UNRN-45082) ▼</span>
+                </div>
+            </div>
+        </div>
+        <div class="sub-header">
+            <div class="propuesta">
+                <span>Propuesta:</span>
+                <select>
+                    <option>Licenciatura en sistemas ▼</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-menu">
+            <li class="active"><a href="#">GPPS</a></li>
+            <li class="tramites-menu">
+                <a href="#">Trámites ▼</a>
+                <div class="submenu">
+                    <a href="#">Solicitar</a>
+                    <a href="#">Ver entregados</a>
+                </div>
+            </li>
+        </ul>
+        <div class="profile-menu">
+            <span><i class="fas fa-bell"></i></span>
+            <span class="icon-separator"></span>
+            <span><i class="fas fa-envelope"></i></span>
+            <span class="icon-separator"></span>
+            <span>Perfil: Alumno ▼</span>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Gestión de Prácticas Profesionales Supervisadas</h1>
+        
+        <div class="dashboard">
+            <div class="dashboard-card">
+                <h2>Estado de mi PPS</h2>
+                <div class="status-info">
+                    <p>No tienes una PPS activa actualmente.</p>
+                    <button class="btn primary">Iniciar nueva PPS</button>
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Proyectos disponibles</h2>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <h3>Desarrollo de aplicación web</h3>
+                        <p><strong>Entidad:</strong> Empresa XYZ</p>
+                        <p><strong>Área:</strong> Desarrollo Web</p>
+                        <p><strong>Ubicación:</strong> Bariloche</p>
+                        <button class="btn secondary">Ver detalles</button>
+                    </div>
+                    <div class="project-item">
+                        <h3>Implementación de sistema de gestión</h3>
+                        <p><strong>Entidad:</strong> Municipalidad de Río Negro</p>
+                        <p><strong>Área:</strong> Sistemas de Información</p>
+                        <p><strong>Ubicación:</strong> Viedma</p>
+                        <button class="btn secondary">Ver detalles</button>
+                    </div>
+                    <div class="project-item">
+                        <h3>Desarrollo de aplicación móvil</h3>
+                        <p><strong>Entidad:</strong> Startup ABC</p>
+                        <p><strong>Área:</strong> Desarrollo Móvil</p>
+                        <p><strong>Ubicación:</strong> Remoto</p>
+                        <button class="btn secondary">Ver detalles</button>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="#">Ver todos los proyectos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab-header">
+                <button class="tab-btn active">Proyectos</button>
+                <button class="tab-btn">Mis PPS</button>
+                <button class="tab-btn">Entidades</button>
+                <button class="tab-btn">Convenios</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <h2>Proyectos disponibles</h2>
+                    <div class="filters">
+                        <div class="filter-group">
+                            <label for="area">Área:</label>
+                            <select id="area">
+                                <option value="">Todas</option>
+                                <option value="web">Desarrollo Web</option>
+                                <option value="mobile">Desarrollo Móvil</option>
+                                <option value="data">Ciencia de Datos</option>
+                                <option value="networks">Redes</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="location">Ubicación:</label>
+                            <select id="location">
+                                <option value="">Todas</option>
+                                <option value="bariloche">Bariloche</option>
+                                <option value="viedma">Viedma</option>
+                                <option value="remote">Remoto</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="entity">Entidad:</label>
+                            <select id="entity">
+                                <option value="">Todas</option>
+                                <option value="xyz">Empresa XYZ</option>
+                                <option value="muni">Municipalidad de Río Negro</option>
+                                <option value="abc">Startup ABC</option>
+                            </select>
+                        </div>
+                        <button class="btn secondary">Filtrar</button>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Entidad</th>
+                                <th>Área</th>
+                                <th>Ubicación</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Desarrollo de aplicación web</td>
+                                <td>Empresa XYZ</td>
+                                <td>Desarrollo Web</td>
+                                <td>Bariloche</td>
+                                <td>
+                                    <button class="btn small">Ver</button>
+                                    <button class="btn small primary">Postular</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Implementación de sistema de gestión</td>
+                                <td>Municipalidad de Río Negro</td>
+                                <td>Sistemas de Información</td>
+                                <td>Viedma</td>
+                                <td>
+                                    <button class="btn small">Ver</button>
+                                    <button class="btn small primary">Postular</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Desarrollo de aplicación móvil</td>
+                                <td>Startup ABC</td>
+                                <td>Desarrollo Móvil</td>
+                                <td>Remoto</td>
+                                <td>
+                                    <button class="btn small">Ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Análisis de datos para marketing</td>
+                                <td>Empresa DEF</td>
+                                <td>Ciencia de Datos</td>
+                                <td>Bariloche</td>
+                                <td>
+                                    <button class="btn small">Ver</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Configuración de infraestructura de red</td>
+                                <td>Instituto GHI</td>
+                                <td>Redes</td>
+                                <td>Viedma</td>
+                                <td>
+                                    <button class="btn small">Ver</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button class="btn small">Anterior</button>
+                        <span>Página 1 de 3</span>
+                        <button class="btn small">Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Universidad Nacional de Río Negro - Sistema de Gestión de Prácticas Profesionales Supervisadas</p>
+        </div>
+    </footer>
+</body>
+</html>
